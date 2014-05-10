@@ -24,7 +24,7 @@ B -> Vladimir
 M -> gurl please 
 s -> Lanaster
 V -> FLAIRBROTHER 
-1 -> nullpointerexception42 there were 41 other ones);
+1 -> nullpointerexception42 (there were 41 other ones);
 2 -> 3 
 3 -> 2 
 5 -> 80 
