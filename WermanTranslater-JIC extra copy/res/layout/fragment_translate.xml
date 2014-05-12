@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button1"
         android:layout_alignRight="@+id/editText1"
+        android:textColor="#ffffff"
         android:text="Werman" />
 
     <TextView
@@ -49,6 +50,7 @@
         android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
         android:layout_marginTop="22dp"
+        android:textColor="#ffffff"
         android:text="English" />
 
 </RelativeLayout>

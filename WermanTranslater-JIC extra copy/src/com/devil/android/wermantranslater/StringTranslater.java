@@ -15,9 +15,19 @@ public class StringTranslater {
 	public static String encrpytingString(String original){
 		String[] encryptedString = original.split("\\s+");
 		String finalencryptedString = "";
+		String imspecial = "";
+		int start = 0;
+		int  end = 0;
 		
 		for(int k = 0; k < encryptedString.length; k++){
 			finalencryptedString += Encryption.encryption(encryptedString[k]) + " ";
+		}
+		
+		if(finalencryptedString.contains("shawnish")){
+			start = finalencryptedString.indexOf("shawnish");
+			end = finalencryptedString.lastIndexOf("shawnish");
+			imspecial = finalencryptedString.substring(start , end + 9);
+			finalencryptedString = finalencryptedString.replace(imspecial, "Jackson ");
 		}
 		return finalencryptedString;
 	}
@@ -86,6 +96,19 @@ public class StringTranslater {
 			imspecial = finaldecryptedString.substring(start , end + 50);
 			finaldecryptedString = finaldecryptedString.replace(imspecial, "1");
 		}
+		if(finaldecryptedString.contains("Connie or pro Connie or pro")){
+			start = finaldecryptedString.indexOf("Connie or pro Connie or pro");
+			end = finaldecryptedString.lastIndexOf("Connie or pro Connie or pro");
+			imspecial = finaldecryptedString.substring(start , end + 27);
+			finaldecryptedString = finaldecryptedString.replace(imspecial, "Connie");
+		}
+		if(finaldecryptedString.contains("the wang!")){
+			start = finaldecryptedString.indexOf("the wang!");
+			end = finaldecryptedString.lastIndexOf("the wang!");
+			imspecial = finaldecryptedString.substring(start , end + 9);
+			finaldecryptedString = finaldecryptedString.replace(imspecial, "");
+		}
+
 
 		
 
